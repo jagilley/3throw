@@ -1,10 +1,8 @@
-# IE3Throw
+# 3Throw
 
-Seems like this might be very useful: https://github.com/BerkeleyAutomation/perception. Make sure to run `pip install -e .` when cd'ed into its folder, though, to install dependencies.
+A beer pong-playing robot with Raspberry Pi brains
 
-Also worth checkingsifej out, a different approach: https://github.com/af-3/Stereo_Vision
-
-## Raspberry Pi Connection wiht laptop
+## Raspberry Pi Connection with laptop
 
 boot up Raspberry Pi and run `ifconfig` to check ip address.
 
