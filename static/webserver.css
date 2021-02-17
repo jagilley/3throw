@@ -1,0 +1,69 @@
+body{
+    /* background-image: url("/static/Free_Shmup_Sprites_Spacescape.png") */
+    /* background-color: green; */
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(89, 0, 255);
+    height: 100px;
+}
+
+.mainScreen{
+    width: 100%;
+    height: 500px;;
+
+}
+
+.streamWrapper{
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    float: left;
+}
+
+.infoWrapper{
+    width: 40%;
+    float: left;
+    height: inherit;
+}
+
+#asdwKey{
+    width: 100px;
+    height: 60px;
+}
+
+#kKey{
+    width: 40px;
+    height: 40px;
+}
+
+
+.instruction{
+    width: 100%;
+    height: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.energyWrap{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.progressBarContainer {
+    margin-left: 10%;
+    width: 40%;
+    height: 30px;
+    border: 1px black solid;
+  }
+  
+  .progressBar {
+    width: 33%;         /* representing the vale of the energy bar*/
+    height: 100%;
+    background-color: red;
+  }

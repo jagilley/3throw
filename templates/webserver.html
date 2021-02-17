@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+   <title>RPi Web Server</title>
+   <!-- jquery library needed for keybardEvent listening!!! -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <script type = "text/javascript" src="/static/webserver.js"></script>
+   <link rel="stylesheet" type="text/css" href="/static/webserver.css"></link>
+   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+   <link rel="icon" href="data:,">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+   <div class="heading">
+      <h1>Ping-pong Shooting!</h1>
+   </div>
+
+   <div class="mainScreen">
+      <div class="streamWrapper">
+         <img src="{{ url_for('video_feed') }}">
+      </div>
+
+      <div class="infoWrapper">
+         <div class="instruction">
+            <img src="/static/keyboard_asdw.png" id="asdwKey"> for movement <br>
+
+            Holding <img src="/static/k_icon.png" id="kKey"> for accumulating power and shoot.
+         </div>
+         
+         <div class="energyWrap">
+            <div class="progressBarContainer">
+               <div id="progressBar" class="progressBar"> </div>
+               <p>power span</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <!-- <h1>RPi Web Server</h1>
+   {% for pin in pins %}
+   <h2>{{ pins[pin].name }}
+   {% if pins[pin].state == true %}
+      is currently <strong>on</strong></h2><div class="row"><div class="col-md-2">
+      <a href="/{{pin}}/off" class="btn btn-block btn-lg btn-default" role="button">Turn off</a></div></div>
+   {% else %}
+      is currently <strong>off</strong></h2><div class="row"><div class="col-md-2">
+      <a href="/{{pin}}/on" class="btn btn-block btn-lg btn-primary" role="button">Turn on</a></div></div>
+   {% endif %}
+   {% endfor %} -->
+</body>
+</html>
